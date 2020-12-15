@@ -1,5 +1,5 @@
 # algorizm_memo
-## quick_sortのアルゴリズムを追加
+## クイックソートアルゴリズムを追加
 ```python
 def quick_sort(target):
     # リストの長さが1以下の場合、ソーティングが済んでいる
@@ -19,6 +19,18 @@ def quick_sort(target):
 if __name__ == '__main__':
     test_list = [5, 3, 9, 10, 2, 7, 8, 8, 6, 13]
     print(quick_sort(test_list))
+```
 
+## バブルソートアルゴリズムを追加
+```python
+def bubble_sort(arr):
+    for index in range(len(arr)-1, 0, -1):
+        for i in range(index):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    return arr
 
+if __name__ == '__main__':
+    test_list = [5, 3, 9, 10, 2, 7, 8, 8, 6, 13]
+    print(bubble_sort(test_list))
 ```
